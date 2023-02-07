@@ -1,0 +1,158 @@
+{
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "enablePullDownRefresh": false
+      }
+    },
+		{
+      "path": "pages/userInfo/userInfo",
+      "style": {
+        "navigationBarTitleText": "个人详情",
+        "enablePullDownRefresh": false
+      }
+    },
+		{
+      "path": "pages/home/home",
+      "style": {
+        "navigationBarTitleText": "享+本地生活",
+        "navigationBarBackgroundColor": "#D2DDE8",
+        "enablePullDownRefresh": false,
+				"backgroundColorBottom": "#fff",
+				"backgroundColorTop": "#D2DDE8"
+      }
+    },
+		
+		{
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "我的",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#6394C0",
+				"enablePullDownRefresh": false,
+				"backgroundColorBottom": "#FAFAFA",
+				"backgroundColorTop": "#6394C0"
+      }
+    }, 
+		{
+		  "path": "pages/community-detail/community-detail",
+		  "style": {
+		    "navigationBarTitleText": "社区公告详情",
+		    "enablePullDownRefresh": false
+		  }
+		},
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    }
+  ],
+	"subPackages": [
+		{
+			"root": "pkg-house",
+			"pages": 
+			[
+				{
+					"path" : "house/house",
+					"style" :                                                                                    
+					{
+						"navigationBarTitleText": "我的房屋",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path" : "add-house/add-house",
+					"style" :                                                                                    
+					{
+						"navigationBarTitleText": "选择社区",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path" : "select-building/select-building",
+					"style" :                                                                                    
+					{
+						"navigationBarTitleText": "选择楼栋",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path" : "select-room/select-room",
+					"style" :                                                                                    
+					{
+						"navigationBarTitleText": "选择房间",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path" : "add-house-info/add-house-info",
+					"style" :                                                                                    
+					{
+						"navigationBarTitleText": "添加房屋信息",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		},
+		{
+			"root": "pkg-my-repair",
+			"pages": [
+				{
+					"path" : "my-repair/my-repair",
+					"style" :                                                                                    
+					{
+						"navigationBarTitleText": "我的报修",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path" : "repair-detail/repair-detail",
+					"style" :                                                                                    
+					{
+						"navigationBarTitleText": "报修详情",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path" : "edit-repair-info/edit-repair-info",
+					"style" :                                                                                    
+					{
+						"navigationBarTitleText": "填写报修详情",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		}
+	],
+  // 全局的配置
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#8E8E92",
+    "selectedColor": "8E8E92",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+			{
+        "iconPath": "./static/icon/home.png",
+        "selectedIconPath": "./static/icon/home-active.png",
+        "text": "首页",
+        "pagePath": "pages/home/home"
+      },
+      {
+        "iconPath": "./static/icon/mine.png",
+        "selectedIconPath": "./static/icon/mine-active.png",
+        "text": "我的",
+        "pagePath": "pages/my/my"
+      }
+    ]
+  },
+  "uniIdRouter": {}
+}
